@@ -1,0 +1,75 @@
+body {
+  background-image: url("../imagenes/fondo.jpg");
+  margin: 0;
+}
+
+h1 {
+  font-family: "pacifico", cursive;
+  text-align: center;
+  color: #8ad1e9;
+}
+
+.welcomeForm {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  background-color: bisque;
+  border: solid black 10px;
+  border-radius: 10px;
+}
+.welcomeForm .saludo {
+  text-align: center;
+  font-family: "mali", cursive;
+}
+.welcomeForm .dificultades {
+  text-align: center;
+  font-family: "mali", cursive;
+}
+
+.botones .levels {
+  background-color: #ffc402;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 100%;
+  font-family: "mali", cursive;
+}
+
+#ups {
+  color: red;
+  font-family: "mali", cursive;
+}
+
+section {
+  margin: auto;
+  width: 1000px;
+  height: 900px;
+  margin-top: 20px;
+  border: solid black 10px;
+  border-radius: 8px;
+  background-color: rgba(255, 228, 196, 0.685);
+  text-align: center;
+}
+section .imagenes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+section .imagenes .pieza-div {
+  width: 20%;
+  height: 200px;
+  margin: 2px;
+}
+section .imagenes .pieza-div img {
+  width: 100%;
+  border: solid #ffc402 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=index.css.map */
