@@ -1,15 +1,21 @@
+@mixin fontMemo() {
+    font-family: 'pacifico', cursive;
+    text-align: center;
+    color: rgb(65, 187, 228);
+}
+
+
 body{
     background-image: url("../imagenes/fondo.jpg");
     margin: 0;
 }
 
 h1{
-    font-family: 'pacifico', cursive;
-    text-align: center;
-    color:rgb(138, 209, 233);
+    @include fontMemo();
 }
 .welcomeForm{
     margin: auto;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -17,7 +23,11 @@ h1{
     background-color: bisque;
     border: solid black 10px;
     border-radius: 10px;
-  
+    
+    input{
+        margin: 2px 10px 2px 10px;
+        border-color: fuchsia;
+    }
     .saludo{
         text-align: center;
         font-family:'mali',cursive;
@@ -28,30 +38,49 @@ h1{
     }
 }
 
+.hide{
+    display:none
+}
+
 .botones{
+    margin: 2px 10px 2px 10px;
     .levels{
         background-color: rgb(255, 196, 2);
         color: white;
-        font-size: 20px;
+        font-size: 19px;
         border-radius: 5px;
         width: 100%;
+        height: 30px;
         font-family: 'mali',cursive;
-    }
+    } 
 }
 
-#ups{
+.ups{
     color:red;
     font-family: 'mali',cursive;
+}
+
+.memo {
+    @include fontMemo();
+    font-size: 30px;
+}
+
+.dificultnum{
+    color: rgb(65, 187, 228);
+    font-weight: bold;
 }
 section{
     margin: auto;
     width: 1000px;
     height: 900px;
     margin-top: 20px;
+    margin-bottom: 20px;
     border: solid black 10px;
     border-radius: 8px;
-    background-color: rgba(255, 228, 196, 0.685);
+    background-color: rgba(255, 228, 196, 0.575);
     text-align: center;
+    font-family: 'mali',cursive;
+    font-size: medium;
 
     .imagenes{
         display: flex;
@@ -68,13 +97,16 @@ section{
                 border: solid rgb(255, 196, 2) 2px;
             }
             .correct{
-                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);
             }
         }
     }    
 }
 
-.hidden{
-    display:none
+.intentos{
+    border: solid rgb(65, 187, 228) 4px;
+    width: 900px;
+    margin: auto;
+   
 }
