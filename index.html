@@ -23,17 +23,17 @@
                 ¿Con qué dificultad te gustaría jugar?
             </p>
             <div class="botones">
-                <button class="levels" id="1">Facil</button>
-                <button class="levels" id="2">Intermedio</button>
-                <button class="levels" id="3">Dificil</button>
+                <button class="levels" id="level1">Facil</button>
+                <button class="levels" id="level2">Intermedio</button>
+                <button class="levels" id="level3">Dificil</button>
             </div>
-            <p id="ups"></p>
+            <p class="ups"></p>
         </div>
        
-    <section>
-
-        <p>Hola </p>
-        <p>Encontrá todos los pares en menos de 18 intentos</p>
+    <section class ="hide">
+        <h2 class="memo">MemoTest</h2>
+        <p class= "hola">Hola  </p>
+        <p>Encontrá todos los pares en menos de <span class="dificultnum"></span> intentos</p>
 
         <div class="imagenes">
             <div class="pieza-div" data-id="1" id="img1">
@@ -86,7 +86,7 @@
         </div>    
 
         <div class="intentos">
-            <p id="contIntents"> Intentos: </p>
+            <p> Intentos:<span id="contAttempts"></span> </p>
         </div>
 
     </section>
